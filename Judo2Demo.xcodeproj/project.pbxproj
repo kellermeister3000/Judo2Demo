@@ -11,6 +11,8 @@
 		8483C7B229DE021500D6746F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483C7B129DE021500D6746F /* ContentView.swift */; };
 		8483C7B429DE021600D6746F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8483C7B329DE021600D6746F /* Assets.xcassets */; };
 		8483C7B729DE021600D6746F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8483C7B629DE021600D6746F /* Preview Assets.xcassets */; };
+		8483C7BF29DE048D00D6746F /* Judo in Frameworks */ = {isa = PBXBuildFile; productRef = 8483C7BE29DE048D00D6746F /* Judo */; };
+		84A91B3629DE0D8E00BC8B82 /* Judo2Demo.judo in Resources */ = {isa = PBXBuildFile; fileRef = 84A91B3529DE0D8E00BC8B82 /* Judo2Demo.judo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		8483C7B129DE021500D6746F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8483C7B329DE021600D6746F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8483C7B629DE021600D6746F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84A91B3529DE0D8E00BC8B82 /* Judo2Demo.judo */ = {isa = PBXFileReference; lastKnownFileType = file; path = Judo2Demo.judo; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8483C7BF29DE048D00D6746F /* Judo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 		8483C7AE29DE021500D6746F /* Judo2Demo */ = {
 			isa = PBXGroup;
 			children = (
+				84A91B3529DE0D8E00BC8B82 /* Judo2Demo.judo */,
 				8483C7AF29DE021500D6746F /* Judo2DemoApp.swift */,
 				8483C7B129DE021500D6746F /* ContentView.swift */,
 				8483C7B329DE021600D6746F /* Assets.xcassets */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Judo2Demo;
+			packageProductDependencies = (
+				8483C7BE29DE048D00D6746F /* Judo */,
+			);
 			productName = Judo2Demo;
 			productReference = 8483C7AC29DE021500D6746F /* Judo2Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 8483C7A329DE021500D6746F;
+			packageReferences = (
+				8483C7BD29DE048D00D6746F /* XCRemoteSwiftPackageReference "judo-swiftui" */,
+			);
 			productRefGroup = 8483C7AD29DE021500D6746F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A91B3629DE0D8E00BC8B82 /* Judo2Demo.judo in Resources */,
 				8483C7B729DE021600D6746F /* Preview Assets.xcassets in Resources */,
 				8483C7B429DE021600D6746F /* Assets.xcassets in Resources */,
 			);
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8483C7BD29DE048D00D6746F /* XCRemoteSwiftPackageReference "judo-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/judoapp/judo-swiftui";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8483C7BE29DE048D00D6746F /* Judo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8483C7BD29DE048D00D6746F /* XCRemoteSwiftPackageReference "judo-swiftui" */;
+			productName = Judo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8483C7A429DE021500D6746F /* Project object */;
 }
